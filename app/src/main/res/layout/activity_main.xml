@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_120"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/qb_px_5"
+        android:gravity="end"
+        android:background="@drawable/repeat_bg">
+        <ImageButton
+            android:id="@+id/bt_log"
+            android:layout_width="@dimen/qb_px_259"
+            android:layout_height="@dimen/qb_px_100"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/qb_px_10"
+            android:background="#0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#87908d"
+            android:textSize="@dimen/qb_px_40"
+            android:layout_marginRight="@dimen/qb_px_1150"
+            android:text="@string/company_name">
+
+        </TextView>
+        <ImageButton
+            android:id="@+id/bt_setting"
+            android:layout_width="@dimen/qb_px_84"
+            android:layout_height="@dimen/qb_px_107"
+            android:layout_marginRight="@dimen/qb_px_80"
+            android:background="#0000"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_900"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/xlb_main_bgimg">
+
+
+            <ScrollView
+                android:layout_width="@dimen/qb_px_540"
+                android:layout_height="@dimen/qb_px_1000">
+            <LinearLayout
+                android:layout_width="@dimen/qb_px_540"
+                android:layout_height="@dimen/qb_px_1000"
+                android:orientation="vertical">
+                <ListView
+                    android:id="@+id/Llistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/qb_px_700">
+                </ListView>
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_540"
+                    android:layout_height="@dimen/qb_px_110"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btMsetting"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btDDSetting"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+                    <ImageButton
+                        android:id="@+id/btclear"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btlock"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_540"
+                    android:layout_height="@dimen/qb_px_140"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btHLFsetting"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btUPSetting"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+                    <ImageButton
+                        android:id="@+id/btStopSetting"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btDownSetting"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_40"
+                        android:background="#0000"/>
+                </LinearLayout>
+            </LinearLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/qb_px_839"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_839"
+                    android:layout_height="@dimen/qb_px_210"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btWD"
+                        android:layout_width="@dimen/qb_px_79"
+                        android:layout_height="@dimen/qb_px_210"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_120"
+                        android:background="#0000"/>
+
+                    <TextView
+                        android:id="@+id/txtWD"
+                        android:layout_width="@dimen/qb_px_150"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/qb_px_1"
+                        android:textColor="#000000"
+                        android:text="房间温度："
+                        android:textSize="@dimen/qb_px_20">
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/btSD"
+                        android:layout_width="@dimen/qb_px_79"
+                        android:layout_height="@dimen/qb_px_210"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_150"
+                        android:background="#0000"/>
+
+                    <TextView
+                        android:id="@+id/txtSD"
+                        android:layout_width="@dimen/qb_px_180"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/qb_px_1"
+                        android:textColor="#000000"
+                        android:text="房间湿度："
+                        android:textSize="@dimen/qb_px_20">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_839"
+                    android:layout_height="@dimen/qb_px_210"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btYL"
+                        android:layout_width="@dimen/qb_px_112"
+                        android:layout_height="@dimen/qb_px_105"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_100"
+                        android:background="#0000"/>
+
+                    <TextView
+                        android:id="@+id/txtYL"
+                        android:layout_width="@dimen/qb_px_150"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginLeft="@dimen/qb_px_1"
+                        android:textColor="#000000"
+                        android:text="房间压差："
+                        android:textSize="@dimen/qb_px_20">
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/btJD"
+                        android:layout_width="@dimen/qb_px_79"
+                        android:layout_height="@dimen/qb_px_210"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_140"
+                        android:background="#0000"/>
+
+                    <TextView
+                        android:id="@+id/txtJD"
+                        android:layout_width="@dimen/qb_px_150"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/qb_px_5"
+                        android:textColor="#000000"
+                        android:text="外排角度："
+                        android:textSize="@dimen/qb_px_20">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_839"
+                    android:layout_height="@dimen/qb_px_210"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btWFL"
+                        android:layout_width="@dimen/qb_px_105"
+                        android:layout_height="@dimen/qb_px_210"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_100"
+                        android:background="#0000"/>
+
+                    <TextView
+                        android:id="@+id/txtWFL"
+                        android:layout_width="@dimen/qb_px_200"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/qb_px_1"
+                        android:textColor="#000000"
+                        android:text="外排风量："
+                        android:textSize="@dimen/qb_px_20">
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/btNFL"
+                        android:layout_width="@dimen/qb_px_105"
+                        android:layout_height="@dimen/qb_px_210"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_100"
+                        android:background="#0000"/>
+
+                    <TextView
+                        android:id="@+id/txtNFL"
+                        android:layout_width="@dimen/qb_px_200"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/qb_px_1"
+                        android:textColor="#000000"
+                        android:text="补风量："
+                        android:textSize="@dimen/qb_px_20">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_839"
+                    android:layout_height="@dimen/qb_px_200"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btLight"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_108"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_350"
+                        android:background="#0000"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_839"
+                    android:layout_height="@dimen/qb_px_110"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btLightG1"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_108"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_50"
+                        android:background="#0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btLightG2"
+                        android:layout_width="@dimen/qb_px_88"
+                        android:layout_height="@dimen/qb_px_108"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/qb_px_550"
+                        android:background="#0000"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="@dimen/qb_px_540"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="@dimen/qb_px_540"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ListView
+                        android:id="@+id/Rlistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/qb_px_700">
+                    </ListView>
+                    <LinearLayout
+                        android:layout_width="@dimen/qb_px_540"
+                        android:layout_height="@dimen/qb_px_110"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/btMsetting2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+
+                        <ImageButton
+                            android:id="@+id/btDDSetting2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+                        <ImageButton
+                            android:id="@+id/btclear2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+
+                        <ImageButton
+                            android:id="@+id/btlock2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/qb_px_540"
+                        android:layout_height="@dimen/qb_px_140"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/btHLFsetting2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+
+                        <ImageButton
+                            android:id="@+id/btUPSetting2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+                        <ImageButton
+                            android:id="@+id/btStopSetting2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+
+                        <ImageButton
+                            android:id="@+id/btDownSetting2"
+                            android:layout_width="@dimen/qb_px_88"
+                            android:layout_height="@dimen/qb_px_110"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/qb_px_40"
+                            android:background="#0000"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

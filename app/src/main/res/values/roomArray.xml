@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vavroom">
+        <item>面风速</item>
+        <item>门高</item>
+        <item>报警1</item>
+        <item>回流阀角度</item>
+        <item>报警2</item>
+        <item>设置排风量</item>
+        <item>实际排风量</item>
+        <item>实际回风量</item>
+
+<!--        <item>走廊</item>-->
+<!--        <item>试剂缓冲间</item>-->
+<!--        <item>试剂准备间</item>-->
+<!--        <item>样品缓冲间</item>-->
+<!--        <item>样品制备间</item>-->
+<!--        <item>扩增缓冲间</item>-->
+<!--        <item>产物扩增间</item>-->
+<!--        <item>产物分析室</item>-->
+<!--        <item>分析缓冲间</item>-->
+<!--        <item>洗消室</item>-->
+
+<!--        <item>走廊</item>-->
+<!--        <item>试剂缓冲间</item>-->
+<!--        <item>试剂准备间</item>-->
+<!--        <item>样品缓冲间</item>-->
+<!--        <item>样品制备间</item>-->
+<!--        <item>扩增缓冲间</item>-->
+<!--        <item>产物扩增间</item>-->
+<!--        <item>洗消室</item>-->
+    </string-array>
+    <string-array name="edvroom1">   // 排风频率1和频率
+        <item>缓冲间1</item>
+        <item>试剂准备间</item>
+        <item>缓冲间2</item>
+        <item>缓冲间3</item>
+        <item>扩增缓冲间</item>
+        <item>洗消室</item>
+<!--        <item>走廊</item>-->
+<!--        <item>试剂缓冲间</item>-->
+<!--        <item>试剂准备间</item>-->
+<!--        <item>样品缓冲间</item>-->
+<!--        <item>扩增缓冲间</item>-->
+<!--        <item>产物扩增间</item>-->
+<!--        <item>分析缓冲间</item>-->
+<!--        <item>产物分析室</item>-->
+<!--        <item>洗消室</item>-->
+<!--        <item>生物安全柜补风</item>-->
+<!--        <item>生物安全柜排风</item>-->
+    </string-array>
+    <string-array name="edvroom2">//排风参数2的和频率
+        <item>样品制备间</item>
+        <item>扩增缓冲间</item>
+    </string-array>
+    <string-array name="edvroom3">//排风参数3的和频率
+        <item>产物扩增间</item>
+        <item>洗消缓冲间</item>
+    </string-array>
+    <string-array name="edvroom4">//排风参数4的和频率
+        <item>洗消室</item>
+    </string-array>
+    <string-array name="vavroom1">  //送风参数1 和频率
+        <item>设备1</item>
+    </string-array>
+    <string-array name="vavroom2">
+        <item>设备2</item>
+    </string-array>
+
+    <string-array name="edvroom7">   // 排风频率1和频率
+        <item>走廊</item>
+        <item>试剂缓冲间</item>
+        <item>试剂准备间</item>
+        <item>样品缓冲间</item>
+        <item>扩增缓冲间</item>
+        <item>分析缓冲间</item>
+        <!--        <item>产物分析室</item>-->
+        <!--        <item>产物扩增室</item>-->
+        <item>洗消室</item>
+        <!--        <item>生物安全柜补风</item>-->
+        <!--        <item>生物安全柜排风</item>-->
+    </string-array>
+    <string-array name="roomcad">
+        <item>核酸检测风管平面布局图</item>
+        <item>核酸检测风管3D图</item>
+        <item>核酸检测平面布局图</item>
+        <item>核酸检测平面3D图</item>
+        <item>核酸检测风管平面布局图</item>
+        <item>核酸检测风管3D图</item>
+        <item>核酸检测平面布局图</item>
+        <item>核酸检测平面3D图</item>
+        <item>核酸检测平面布局图</item>
+        <item>核酸检测平面3D图</item>
+        <item>核酸检测风管平面布局图</item>
+        <item>核酸检测风管3D图</item>
+        <item>核酸检测平面布局图</item>
+        <item>核酸检测平面3D图</item>
+    </string-array>
+    <string-array name="ICCID">
+        <item>VAV</item>
+    </string-array>
+
+    <string-array name="LOG">
+        <item>报警记录</item>
+        <item>运行日记</item>
+    </string-array>
+
+    <string-array name="edvindex">
+        <item>1</item>
+    </string-array>
+    <string-array name="vavindex">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

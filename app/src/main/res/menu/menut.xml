@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_copy"
+        android:title="WM"></item>
+    <item
+        android:id="@+id/menu_collect"
+        android:title="TM"></item>
+    <item
+        android:id="@+id/menu_translate"
+        android:title="NI"></item>
+    <item
+        android:id="@+id/menu_report"
+        android:title="CE"></item>
+</menu>

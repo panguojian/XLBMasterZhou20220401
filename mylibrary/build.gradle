@@ -1,0 +1,97 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    api files('..\\App\\libs\\javabase64-1.3.1.jar')
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.github.HanHuoBin:BaseDialog:1.2.0'
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    api 'androidx.multidex:multidex:2.0.0'
+
+    //Android Support
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.recyclerview:recyclerview:1.0.0'
+    api 'com.google.android.material:material:1.0.0'
+    api 'androidx.cardview:cardview:1.0.0'
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"
+    // Anko Commons
+    api "org.jetbrains.anko:anko-commons:${anko_version}"
+    // Support-v4 (only Anko Commons)
+    api "org.jetbrains.anko:anko-support-v4-commons:${anko_version}"
+    // RxKotlin and RxAndroid
+    api "io.reactivex.rxjava3:rxkotlin:3.0.1"
+    api "io.reactivex.rxjava3:rxandroid:3.0.0"
+    api 'io.reactivex.rxjava2:rxjava:2.2.4'
+    //Retrofit
+    api "com.squareup.okhttp3:okhttp:${ok_http_version}"
+    api "com.squareup.retrofit2:retrofit:${retrofit_version}"
+    api "com.squareup.okhttp3:logging-interceptor:${ok_http_version}"
+    api "com.squareup.retrofit2:converter-gson:${retrofit_version}"
+    api "com.squareup.retrofit2:adapter-rxjava:${retrofit_version}"
+    //Glide
+    api "com.github.bumptech.glide:glide:${glide_version}"
+    //Kotlin Bus
+    api 'com.eightbitlab:rxbus:1.0.2'
+    //RxLifecycle
+    api "com.trello:rxlifecycle-kotlin:${rx_lifecycle_version}"
+    api "com.trello:rxlifecycle-components:${rx_lifecycle_version}"
+    //stateView
+    api 'com.github.nukc.stateview:library:1.5.0'
+    api 'com.qmuiteam:qmui:1.0.6'
+    api 'com.github.chaychan:KLog:1.0.0'
+    api 'com.github.TEENSTITAN.PictureSelector-master:picture_library:0.0.2'
+    api 'com.github.anzewei:parallaxbacklayout:1.1.6'
+    api 'me.jessyan:autosize:1.2.1'
+    api 'com.github.chaychan:BottomBarLayout:1.1.2'
+    api 'com.github.chaychan:MultipleItemRvAdapter:1.0.4'
+    api 'com.bakerj:backgrounddark-popupwindow:1.0.0'
+    api 'com.github.dmytrodanylyk.shadow-layout:library:1.0.3'
+    api 'ch.ielse:switchbutton:1.0.1'
+    api 'com.github.chrisbanes:PhotoView:2.0.0'
+    api 'com.github.razerdp:BasePopup:2.2.10'
+    api 'com.tencent:mmkv-static:1.2.13'
+    api 'me.jahnen:libaums:0.8.0'
+    api 'com.github.JayChan95318:RoundTextView:1.0.1'
+    api 'com.github.maybesix:Android-XHLibrary:v1.0.0'
+    api 'com.github.licheedev.Android-SerialPort-API:serialport:1.0.1'
+}

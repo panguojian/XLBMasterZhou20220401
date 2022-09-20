@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_image_left"
+            android:layout_width="750dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#605E5E"
+            android:background="#00000000"
+            android:layout_gravity="center_vertical"
+            android:layout_height="1000dp"></Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

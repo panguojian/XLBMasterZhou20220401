@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">XLB</string>
+    <string name="company_name">天赐湾实验室装备</string>//广东汇绿实验室设备科技有限公司//广东天赐湾实验室装备制造有限公司
+    <string name="company_name1">广东天赐湾实验室装备制造有限公司</string>
+    <string name="name">移动方舱实验室</string>
+    <string name="message_report">暂不支持云服务器</string>
+    <string name="message_delayed">设置延时关闭紫外灯(默认30分钟)</string>
+    <string name="room_1">走廊</string>
+    <string name="room_2">仪器室</string>
+    <string name="room_3">缓冲1</string>
+    <string name="room_4">缓冲2</string>
+    <string name="room_5">试剂制备区</string>
+    <string name="room_6">缓冲3</string>
+    <string name="room_7">标本制备区</string>
+    <string name="room_8">缓冲4</string>
+    <string name="room_9">缓冲5</string>
+    <string name="room_10">扩增区</string>
+    <string name="room_11">缓冲6</string>
+    <string name="room_12">产物分析区</string>
+    <string name="room_13">洗涤间</string>
+    <string name="room_14">安全柜</string>
+
+    <string name="parameter_sf_Range">范围</string>
+    <string name="parameter_sf_Adjust">调整</string>
+    <string name="parameter_sf_Up">上限</string>
+    <string name="parameter_sf_Down">下限</string>
+
+    <string name="parameter_cf_On">开角</string>
+    <string name="parameter_cf_Off">关角</string>
+
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

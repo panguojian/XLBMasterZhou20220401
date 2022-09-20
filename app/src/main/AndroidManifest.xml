@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xlb"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    android:sharedUserId="android.uid.system"-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CadActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.Myfull"></activity>
+
+        <service
+            android:name=".SerialPortService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".RWDBSerialPortService"
+            android:enabled="true"
+            android:exported="true" />
+<!--        <service-->
+<!--            android:name=".MyService"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true" />-->
+
+        <activity
+            android:name=".DBDataSetting"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.Myfull" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.Myfull" />
+        <activity
+            android:name=".ServiceActivity2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AlarmActivity"
+            android:label="紫外灯"/>
+        <activity
+            android:name=".DBDataReport"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.Myfull" />
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
